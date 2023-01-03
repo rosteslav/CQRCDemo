@@ -5,7 +5,7 @@ VisualStudioVersion = 17.4.33205.214
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "CQRS-ES", "CQRS-ES", "{30606D3C-FDB6-4F4E-B682-277C0ACCCA50}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SQRS.Core", "SQRS.Core\SQRS.Core.csproj", "{70B6D8AE-AB26-4AB3-A5A0-2BDE9FBF2A2F}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SQRS.Core", "SQRS.Core\SQRS.Core.csproj", "{70B6D8AE-AB26-4AB3-A5A0-2BDE9FBF2A2F}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "SM-Post", "SM-Post", "{0A276D47-052D-4CBD-8A85-0F9AB05F9AE7}"
 EndProject
@@ -13,17 +13,19 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Post.Cmd", "Post.Cmd", "{33
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Post.Query", "Post.Query", "{8D5A9438-A168-41B2-8D9B-7A4CF1507F0D}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Post.Cmd.Api", "SMPost.Cmd.Api\Post.Cmd.Api.csproj", "{88FB7861-98F2-4AD0-8638-A9716EA0C905}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Post.Cmd.Api", "SMPost.Cmd.Api\Post.Cmd.Api.csproj", "{88FB7861-98F2-4AD0-8638-A9716EA0C905}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Post.Cmd.Domain", "SMPosts.Cmd.Domain\Post.Cmd.Domain.csproj", "{041B11C0-1F82-4FFB-B39E-C2D6746CB998}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Post.Cmd.Domain", "SMPosts.Cmd.Domain\Post.Cmd.Domain.csproj", "{041B11C0-1F82-4FFB-B39E-C2D6746CB998}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Post.Cmd.Infrastructure", "Post.Cmd.Infrastructure\Post.Cmd.Infrastructure.csproj", "{C601279A-C6F1-4C47-AD0B-EBC4C2FDF8B5}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Post.Cmd.Infrastructure", "Post.Cmd.Infrastructure\Post.Cmd.Infrastructure.csproj", "{C601279A-C6F1-4C47-AD0B-EBC4C2FDF8B5}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Post.Query.Api", "Post.Query.Api\Post.Query.Api.csproj", "{376F4743-27A7-4A27-BB7F-EF137D3E2A55}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Post.Query.Api", "Post.Query.Api\Post.Query.Api.csproj", "{376F4743-27A7-4A27-BB7F-EF137D3E2A55}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Post.Query.Domain", "Post.Query.Domain\Post.Query.Domain.csproj", "{6438D37C-D451-4F33-9E42-AD36C986EB77}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Post.Query.Domain", "Post.Query.Domain\Post.Query.Domain.csproj", "{6438D37C-D451-4F33-9E42-AD36C986EB77}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Post.Query.Infrastructure", "Post.Query.Infrastructure\Post.Query.Infrastructure.csproj", "{44CD854D-711D-4116-A00C-CBD978B496DA}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Post.Query.Infrastructure", "Post.Query.Infrastructure\Post.Query.Infrastructure.csproj", "{44CD854D-711D-4116-A00C-CBD978B496DA}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Post.Common", "Post.Common\Post.Common.csproj", "{264A9B3A-768A-43A1-AACB-3C383572DFD4}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -59,6 +61,10 @@ Global
 		{44CD854D-711D-4116-A00C-CBD978B496DA}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{44CD854D-711D-4116-A00C-CBD978B496DA}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{44CD854D-711D-4116-A00C-CBD978B496DA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{264A9B3A-768A-43A1-AACB-3C383572DFD4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{264A9B3A-768A-43A1-AACB-3C383572DFD4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{264A9B3A-768A-43A1-AACB-3C383572DFD4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{264A9B3A-768A-43A1-AACB-3C383572DFD4}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -73,6 +79,7 @@ Global
 		{376F4743-27A7-4A27-BB7F-EF137D3E2A55} = {8D5A9438-A168-41B2-8D9B-7A4CF1507F0D}
 		{6438D37C-D451-4F33-9E42-AD36C986EB77} = {8D5A9438-A168-41B2-8D9B-7A4CF1507F0D}
 		{44CD854D-711D-4116-A00C-CBD978B496DA} = {8D5A9438-A168-41B2-8D9B-7A4CF1507F0D}
+		{264A9B3A-768A-43A1-AACB-3C383572DFD4} = {0A276D47-052D-4CBD-8A85-0F9AB05F9AE7}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {01E5F50F-F160-4D69-AABE-EE0338B61978}

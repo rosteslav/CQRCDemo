@@ -6,4 +6,15 @@
     <Nullable>enable</Nullable>
   </PropertyGroup>
 
+  <ItemGroup>
+    <PackageReference Include="Confluent.Kafka" Version="1.9.3" />
+    <PackageReference Include="Microsoft.Extensions.Options" Version="7.0.0" />
+    <PackageReference Include="MongoDB.Driver.Core" Version="2.18.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\SMPosts.Cmd.Domain\Post.Cmd.Domain.csproj" />
+    <ProjectReference Include="..\SQRS.Core\SQRS.Core.csproj" />
+  </ItemGroup>
+
 </Project>
