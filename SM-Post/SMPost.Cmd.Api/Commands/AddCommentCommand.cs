@@ -2,7 +2,7 @@
 
 namespace Post.Cmd.Api.Commands
 {
-    public class CreateCommentCommand : BaseCommand
+    public class AddCommentCommand : BaseCommand
     {
         public string Comment { get; set; }
         public string UserName { get; set; }

@@ -1,6 +1,8 @@
-﻿namespace Post.Cmd.Api.Commands
+﻿using SQRS.Core.Commands;
+
+namespace Post.Cmd.Api.Commands
 {
-    public class DeletePostCommand
+    public class DeletePostCommand : BaseCommand
     {
         public string UserName { get; set; }
     }
