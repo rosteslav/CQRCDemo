@@ -3,17 +3,19 @@ using SQRS.Core.Domain;
 using SQRS.Core.Events;
 using SQRS.Core.Exceptions;
 using SQRS.Core.Infrastucture;
-using System.Linq;
+using SQRS.Core.Producers;
 
 namespace Post.Cmd.Infrastructure.Stores
 {
     public class EventStore : IEventStore
     {
         private readonly IEventStoreRepository _eventStoreRepository;
+        private readonly IEventProducer _eventProducer;
 
-        public EventStore(IEventStoreRepository eventStoreRepository) 
+        public EventStore(IEventStoreRepository eventStoreRepository, IEventProducer eventProducer) 
         {
             _eventStoreRepository = eventStoreRepository;
+            _eventProducer = eventProducer;
         }
 
         public async Task<List<BaseEvent>> GetEventsAsync(Guid aggregateId)
@@ -55,6 +57,9 @@ namespace Post.Cmd.Infrastructure.Stores
                 };
 
                 await _eventStoreRepository.SaveAsync(eventModel);
+
+                var topic = Environment.GetEnvironmentVariable("KAFKA_TOPIC");
+                await _eventProducer.ProduceAsync(topic, @event);
             }
         }
     }
