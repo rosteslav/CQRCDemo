@@ -13,6 +13,6 @@ namespace Post.Query.Domain.Entities
         public DateTime DatePosted { get; set; }
         public string Message { get; set; }
         public int Likes { get; set; }
-        public virtual ICollection<CommentsEntity> Comments { get; set; }
+        public virtual ICollection<CommentEntity> Comments { get; set; }
     }
 }

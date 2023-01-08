@@ -4,7 +4,7 @@ using System.ComponentModel.DataAnnotations.Schema;
 namespace Post.Query.Domain.Entities
 {
     [Table("Comments")]
-    public class CommentsEntity
+    public class CommentEntity
     {
         [Key]
         public Guid Id { get; set; }
